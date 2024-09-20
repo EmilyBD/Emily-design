@@ -1,7 +1,9 @@
 <template>
     <div class="catalogue-page">
-        <div class="catalogue-title">Emily's Design</div>
-        <div class="catalogue-subtitle">种一棵树最好的时间是十年前，其次是现在</div>
+        <div class="catalogue-page__header">
+            <div class="catalogue-title">Emily's Design</div>
+            <div class="catalogue-subtitle">种一棵树最好的时间是十年前，其次是现在</div>
+        </div>
         <div class="catalogue-content">
             <section class="catelogue-block" v-for="(cata, index) in catalogues" :key="cata.name">
                 <div class="img-container">
@@ -49,21 +51,36 @@ const catalogues = ref([
 @import "../assets/variables.scss";
 
 .catalogue-page {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 0 2rem;
+    background-image: url('../assets/images/catalogue/vertical-line.svg');
 
-    .catalogue-title {
-        font-size: $page-title-fontsize;
-    }
+    .catalogue-page__header {
+        background-image: url('../assets/images/catalogue/bg.svg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        background-color: #fff;
 
-    .catalogue-subtitle {
-        font-size: $page-subtitle-fontsize;
+        .catalogue-title {
+            font-size: $page-title-fontsize;
+            line-height: 20rem;
+        }
+
+        .catalogue-subtitle {
+            font-size: $page-subtitle-fontsize;
+        }
     }
 
     .catalogue-content {
+        flex: 1;
         display: inline-flex;
         flex-direction: row;
         justify-content: space-between;
@@ -80,6 +97,7 @@ const catalogues = ref([
             background-color: #F5F8FA;
             border: 1px solid rgba(223, 227, 235, 1);
             padding: 1rem;
+            cursor: pointer;
 
             &:not(:last-child) {
                 margin-right: 2rem;

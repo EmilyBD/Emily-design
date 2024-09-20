@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow_red</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28"></rect>
+    </defs>
+    <g id="整合" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-946.000000, -318.000000)">
+            <g id="arrow_red" transform="translate(946.000000, 318.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="蒙版"></g>
+                <path d="M24,3.82842712 L24,17 C24,18.1045695 23.1045695,19 22,19 L8.82842712,19 C7.72385763,19 6.82842712,18.1045695 6.82842712,17 C6.82842712,16.469567 7.03914081,15.9608592 7.41421356,15.5857864 L20.5857864,2.41421356 C21.366835,1.63316498 22.633165,1.63316498 23.4142136,2.41421356 C23.7892863,2.78928632 24,3.29799415 24,3.82842712 Z" id="矩形" fill="#ED6F4D" mask="url(#mask-2)" transform="translate(14.000000, 9.000000) rotate(45.000000) translate(-14.000000, -9.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
